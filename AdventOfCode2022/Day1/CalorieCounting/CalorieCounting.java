@@ -6,9 +6,9 @@ import java.io.FileNotFoundException;
 
 
 
-public class Main{
+public class CalorieCounting{
 
-    public static void main() throws FileNotFoundException{
+    public static void main(){
 
         System.out.println("hello world!");
 
@@ -24,11 +24,11 @@ public class Main{
                     totalCals += Integer.parseInt(line);
                 }
             }
+            scanner.close();
         }
 
         catch(FileNotFoundException e){
-            throw(e);
+            System.out.println(e);
         }
-
     }
 }
