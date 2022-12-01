@@ -14,23 +14,19 @@ public class Elf(){
 
 public class Main{
 
-    public static void main(){
+    System.out.println("Hello world!");
 
-        System.out.println("Hello world!");
+    try{
+        File calFile = new File("calories.txt");
+        Scanner = new Scanner(calFile);
+        int totalCals = 0;
 
-        try{
-            File calFile = new File("calories.txt");
-            Scanner = new Scanner(calFile);
-            int totalCals = 0;
+        while(scanner.hasNextLine()){
+             String line = scanner.readLine();
 
-            while(scanner.hasNextLine()){
-                String line = scanner.readLine();
-
-                if(line.indexof("\n") != 0){
-                    totalCals += (int)line;
-                }
+            if(line.indexof("\n") != 0){
+                totalCals += (int)line;
             }
-
         }
 
     }
