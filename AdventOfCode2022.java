@@ -2,6 +2,7 @@ import AdventOfCode2022.Day1.CalorieCounting.CalorieCounting;
 import AdventOfCode2022.Day2.Day2;
 import AdventOfCode2022.Day3.Day3;
 import AdventOfCode2022.Day4.Day4;
+import AdventOfCode2022.Day5.Day5;
 
 import java.util.Scanner;
 
@@ -27,6 +28,9 @@ public class AdventOfCode2022 {
                 break;
             case 4:
                 Day4.main();
+                break;
+            case 5:
+                Day5.main(args);
                 break;
         }
 
